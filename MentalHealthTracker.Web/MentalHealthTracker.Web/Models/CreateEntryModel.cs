@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using static MentalHealthTracker.Domain.Entities.Entry;
 
 namespace MentalHealthTracker.Web.Models

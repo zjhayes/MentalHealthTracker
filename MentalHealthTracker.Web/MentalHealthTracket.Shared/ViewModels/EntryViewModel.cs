@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using static MentalHealthTracker.Domain.Entities.Entry;
 
 namespace MentalHealthTracker.Shared.ViewModels

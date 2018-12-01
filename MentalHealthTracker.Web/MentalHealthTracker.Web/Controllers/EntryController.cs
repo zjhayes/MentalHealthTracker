@@ -12,6 +12,7 @@ namespace MentalHealthTracker.Web.Controllers
     public class EntryController : Controller
     {
         private EntryOrchestrator _entryOrchestrator = new EntryOrchestrator();
+        int postCount = 0;
 
         // GET: Entry
         public async Task<ActionResult> Index()
@@ -24,7 +25,6 @@ namespace MentalHealthTracker.Web.Controllers
             return View(entryDisplayModel);
         }
 
-
         public async Task<ActionResult> Create(CreateEntryModel entry)
         {
             if (entry.Mood == 0)
@@ -36,13 +36,13 @@ namespace MentalHealthTracker.Web.Controllers
 
             var updateCount = await _entryOrchestrator.CreateEntry(new EntryViewModel
             {
-                Journal = entry.Journal,
-                Medication = entry.Medication,
+                Journal = entry.Journal == null ? "None" : entry.Journal,
+                Medication = entry.Medication == null ? "None" : entry.Medication,
                 Mood = entry.Mood,
                 User = User.Identity.GetUserId()
             });
 
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }
