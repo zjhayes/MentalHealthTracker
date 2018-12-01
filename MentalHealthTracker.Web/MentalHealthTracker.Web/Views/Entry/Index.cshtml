@@ -1,4 +1,5 @@
 ﻿@model MentalHealthTracker.Web.Models.EntryDisplayModel
+@using Microsoft.AspNet.Identity
 <!DOCTYPE html>
 
 <html>
@@ -20,7 +21,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					@foreach (var entry in Model.Entries)
+					@foreach (var entry in Model.Entries.Where(u => u.User == HttpContext.Current.User.Identity.GetUserId()))
 					{
 						<tr>
 							<td>

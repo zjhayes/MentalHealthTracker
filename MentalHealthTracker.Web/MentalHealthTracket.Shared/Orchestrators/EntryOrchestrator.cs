@@ -27,7 +27,8 @@ namespace MentalHealthTracker.Shared.Orchestrators
                 Date = x.Date,
                 Journal = x.Journal,
                 Medication = x.Medication,
-                Mood = x.Mood
+                Mood = x.Mood,
+                User = x.User
             }).ToListAsync();
 
             return entries;
