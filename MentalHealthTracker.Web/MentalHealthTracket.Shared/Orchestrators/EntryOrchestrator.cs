@@ -41,7 +41,8 @@ namespace MentalHealthTracker.Shared.Orchestrators
                 Date = DateTime.Now,
                 Journal = entry.Journal,
                 Medication = entry.Medication,
-                Mood = entry.Mood
+                Mood = entry.Mood,
+                User = entry.User
             });
 
             return await _mentalContext.SaveChangesAsync();

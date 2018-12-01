@@ -10,5 +10,6 @@ namespace MentalHealthTracker.Web.Models
         public string Journal { get; set; }
         public string Medication { get; set; }
         public Moods Mood { get; set; }
+        public string User { get; set; }
     }
 }

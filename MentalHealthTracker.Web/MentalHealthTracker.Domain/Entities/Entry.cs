@@ -18,7 +18,7 @@ namespace MentalHealthTracker.Domain.Entities
             Excited = 10
         }
         public Guid EntryId { get; set; }
-        public User User { get; set; }
+        public string User { get; set; }
         public DateTime? Date { get; set; }
         public string Journal { get; set; }
         public string Medication { get; set; }

@@ -1,12 +1,14 @@
 ﻿using MentalHealthTracker.Shared.Orchestrators;
 using MentalHealthTracker.Shared.ViewModels;
 using MentalHealthTracker.Web.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace MentalHealthTracker.Web.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class EntryController : Controller
     {
         private EntryOrchestrator _entryOrchestrator = new EntryOrchestrator();
@@ -30,11 +32,14 @@ namespace MentalHealthTracker.Web.Controllers
                 return View();
             }
 
+            IdentityDbContext authContext = new IdentityDbContext();
+
             var updateCount = await _entryOrchestrator.CreateEntry(new EntryViewModel
             {
                 Journal = entry.Journal,
                 Medication = entry.Medication,
-                Mood = entry.Mood
+                Mood = entry.Mood,
+                User = User.Identity.GetUserId()
             });
 
             return View();

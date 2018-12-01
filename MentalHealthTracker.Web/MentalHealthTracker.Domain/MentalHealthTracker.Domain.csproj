@@ -49,11 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Entry.cs" />
-    <Compile Include="Entities\User.cs" />
     <Compile Include="MentalContext.cs" />
     <Compile Include="Migrations\201811070047362_InitialDatabaseCreationWithEntriesAndUsers.cs" />
     <Compile Include="Migrations\201811070047362_InitialDatabaseCreationWithEntriesAndUsers.Designer.cs">
       <DependentUpon>201811070047362_InitialDatabaseCreationWithEntriesAndUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812011916123_UsersUpdate.cs" />
+    <Compile Include="Migrations\201812011916123_UsersUpdate.Designer.cs">
+      <DependentUpon>201812011916123_UsersUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +68,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811070047362_InitialDatabaseCreationWithEntriesAndUsers.resx">
       <DependentUpon>201811070047362_InitialDatabaseCreationWithEntriesAndUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812011916123_UsersUpdate.resx">
+      <DependentUpon>201812011916123_UsersUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

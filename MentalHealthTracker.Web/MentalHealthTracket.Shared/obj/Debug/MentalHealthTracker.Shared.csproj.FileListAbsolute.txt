@@ -13,3 +13,18 @@ C:\Users\zacha\Google Drive\Documents\DMACC\Advanced C#\MentalHealthTracker\Ment
 C:\Users\zacha\Google Drive\Documents\DMACC\Advanced C#\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.dll
 C:\Users\zacha\Google Drive\Documents\DMACC\Advanced C#\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.pdb
 C:\Users\zacha\Google Drive\Documents\DMACC\Advanced C#\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.dll.config
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracket.Shared.dll.config
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracket.Shared.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracket.Shared.pdb
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.pdb
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.dll.config
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.xml
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csprojAssemblyReference.cache
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csproj.CoreCompileInputs.cache
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csproj.CopyComplete
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracket.Shared.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracket.Shared.pdb

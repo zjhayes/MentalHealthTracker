@@ -13,6 +13,7 @@ namespace MentalHealthTracker.Shared.ViewModels
         public string Medication { get; set; }
         public Moods Mood { get; set; }
         public string MoodString => Mood.ToString();
+        public string User { get; set; }
 
         public static explicit operator EntryViewModel(List<EntryViewModel> v)
         {
