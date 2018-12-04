@@ -28,3 +28,18 @@ C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHeal
 C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csproj.CopyComplete
 C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracket.Shared.dll
 C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracket.Shared.pdb
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracket.Shared.dll.config
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracket.Shared.dll
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracket.Shared.pdb
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.dll
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.dll
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.pdb
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\MentalHealthTracker.Domain.dll.config
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.xml
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csprojAssemblyReference.cache
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracker.Shared.csproj.CopyComplete
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracket.Shared.dll
+C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracket.Shared\obj\Debug\MentalHealthTracket.Shared.pdb

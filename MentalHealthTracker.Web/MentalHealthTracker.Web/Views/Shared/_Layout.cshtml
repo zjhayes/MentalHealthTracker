@@ -3,10 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Mental Health Tracker</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <style>
+        body {
+            background-color: lightblue;
+            color: black;
+        }
+        .navbar {
+            background-color:midnightblue;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -17,13 +26,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("MENTAL HEALTH TRACKER", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Journal", "Create", "Entry")</li>
+                    <li>@Html.ActionLink("Entry List", "Index", "Entry")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +43,8 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <img src="~/images/mental_health_tracker.jpg" alt="Mental Health Tracker Logo" width="100px" style="float:right">
+            <p>&copy; @DateTime.Now.Year - Mental Health Tracker: Christina Buchwald, Alek Brown, Zachary Hayes, James Robbins, Thomas Strutt</p>
         </footer>
     </div>
 
