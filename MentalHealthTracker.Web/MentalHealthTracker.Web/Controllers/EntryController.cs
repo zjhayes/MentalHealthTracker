@@ -15,6 +15,7 @@ namespace MentalHealthTracker.Web.Controllers
         int postCount = 0;
 
         // GET: Entry
+        [HandleError]
         public async Task<ActionResult> Index()
         {
             var entryDisplayModel = new EntryDisplayModel
@@ -24,7 +25,7 @@ namespace MentalHealthTracker.Web.Controllers
 
             return View(entryDisplayModel);
         }
-
+        [HandleError]
         public async Task<ActionResult> Create(CreateEntryModel entry)
         {
             if (entry.Mood == 0)

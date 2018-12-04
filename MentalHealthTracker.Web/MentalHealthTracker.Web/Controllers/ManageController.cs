@@ -19,13 +19,11 @@ namespace MentalHealthTracker.Web.Controllers
         public ManageController()
         {
         }
-
         public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
         }
-
         public ApplicationSignInManager SignInManager
         {
             get
@@ -37,7 +35,6 @@ namespace MentalHealthTracker.Web.Controllers
                 _signInManager = value; 
             }
         }
-
         public ApplicationUserManager UserManager
         {
             get
@@ -52,6 +49,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/Index
+        [HandleError]
         public async Task<ActionResult> Index(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
@@ -77,6 +75,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/RemoveLogin
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> RemoveLogin(string loginProvider, string providerKey)
@@ -101,6 +100,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/AddPhoneNumber
+        [HandleError]
         public ActionResult AddPhoneNumber()
         {
             return View();
@@ -108,6 +108,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/AddPhoneNumber
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> AddPhoneNumber(AddPhoneNumberViewModel model)
@@ -132,6 +133,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/EnableTwoFactorAuthentication
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> EnableTwoFactorAuthentication()
@@ -147,6 +149,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/DisableTwoFactorAuthentication
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DisableTwoFactorAuthentication()
@@ -162,6 +165,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/VerifyPhoneNumber
+        [HandleError]
         public async Task<ActionResult> VerifyPhoneNumber(string phoneNumber)
         {
             var code = await UserManager.GenerateChangePhoneNumberTokenAsync(User.Identity.GetUserId(), phoneNumber);
@@ -171,6 +175,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/VerifyPhoneNumber
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> VerifyPhoneNumber(VerifyPhoneNumberViewModel model)
@@ -196,6 +201,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/RemovePhoneNumber
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> RemovePhoneNumber()
@@ -215,6 +221,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/ChangePassword
+        [HandleError]
         public ActionResult ChangePassword()
         {
             return View();
@@ -222,6 +229,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/ChangePassword
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> ChangePassword(ChangePasswordViewModel model)
@@ -246,6 +254,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/SetPassword
+        [HandleError]
         public ActionResult SetPassword()
         {
             return View();
@@ -253,6 +262,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/SetPassword
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> SetPassword(SetPasswordViewModel model)
@@ -278,6 +288,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/ManageLogins
+        [HandleError]
         public async Task<ActionResult> ManageLogins(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
@@ -301,6 +312,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Manage/LinkLogin
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult LinkLogin(string provider)
@@ -311,6 +323,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Manage/LinkLoginCallback
+        [HandleError]
         public async Task<ActionResult> LinkLoginCallback()
         {
             var loginInfo = await AuthenticationManager.GetExternalLoginInfoAsync(XsrfKey, User.Identity.GetUserId());

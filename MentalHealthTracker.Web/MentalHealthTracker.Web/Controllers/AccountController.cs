@@ -21,13 +21,11 @@ namespace MentalHealthTracker.Web.Controllers
         public AccountController()
         {
         }
-
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;
         }
-
         public ApplicationSignInManager SignInManager
         {
             get
@@ -39,7 +37,6 @@ namespace MentalHealthTracker.Web.Controllers
                 _signInManager = value; 
             }
         }
-
         public ApplicationUserManager UserManager
         {
             get
@@ -54,6 +51,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/Login
+        [HandleError]
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
@@ -63,6 +61,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/Login
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -93,6 +92,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/VerifyCode
+        [HandleError]
         [AllowAnonymous]
         public async Task<ActionResult> VerifyCode(string provider, string returnUrl, bool rememberMe)
         {
@@ -106,6 +106,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/VerifyCode
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -136,6 +137,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/Register
+        [HandleError]
         [AllowAnonymous]
         public ActionResult Register()
         {
@@ -144,6 +146,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/Register
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -174,6 +177,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ConfirmEmail
+        [HandleError]
         [AllowAnonymous]
         public async Task<ActionResult> ConfirmEmail(string userId, string code)
         {
@@ -187,6 +191,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ForgotPassword
+        [HandleError]
         [AllowAnonymous]
         public ActionResult ForgotPassword()
         {
@@ -195,6 +200,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/ForgotPassword
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -223,6 +229,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ForgotPasswordConfirmation
+        [HandleError]
         [AllowAnonymous]
         public ActionResult ForgotPasswordConfirmation()
         {
@@ -231,6 +238,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ResetPassword
+        [HandleError]
         [AllowAnonymous]
         public ActionResult ResetPassword(string code)
         {
@@ -239,6 +247,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/ResetPassword
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -265,6 +274,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ResetPasswordConfirmation
+        [HandleError]
         [AllowAnonymous]
         public ActionResult ResetPasswordConfirmation()
         {
@@ -273,6 +283,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/ExternalLogin
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -284,6 +295,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/SendCode
+        [HandleError]
         [AllowAnonymous]
         public async Task<ActionResult> SendCode(string returnUrl, bool rememberMe)
         {
@@ -299,6 +311,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/SendCode
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -319,6 +332,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ExternalLoginCallback
+        [HandleError]
         [AllowAnonymous]
         public async Task<ActionResult> ExternalLoginCallback(string returnUrl)
         {
@@ -349,6 +363,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/ExternalLoginConfirmation
+        [HandleError]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -387,6 +402,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // POST: /Account/LogOff
+        [HandleError]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult LogOff()
@@ -397,6 +413,7 @@ namespace MentalHealthTracker.Web.Controllers
 
         //
         // GET: /Account/ExternalLoginFailure
+        [HandleError]
         [AllowAnonymous]
         public ActionResult ExternalLoginFailure()
         {

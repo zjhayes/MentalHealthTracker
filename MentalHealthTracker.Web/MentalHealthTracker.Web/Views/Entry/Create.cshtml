@@ -6,6 +6,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Create</title>
+    <script>
+        function verifyFields() {
+            if ()
+        }
+    </script>
 </head>
 <body>
     <div>
@@ -34,8 +39,12 @@
                     @Html.EditorFor(model => model.Medication, new { Width = 50 })
                 </div>
             </div>
+            <div id="errorMessage" class="hidden alert alert-danger">
+                Error Occurred. Please fill out all fields!
+            </div>
             <div class="col-md-3">
-                <button onclick="location.href = '~/Entry';" class="btn btn-secondary" type="submit">Save</button>
+                <button onsubmit="verifyFields()" onclick="location.href = '~/Entry';" class="btn btn-secondary" type="submit">Save</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
             </div>
         </form>
     </div>
