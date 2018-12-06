@@ -10,35 +10,63 @@ namespace MentalHealthTracket.Shared.Services
 {
     public class HealthCalculator : IHealthCalculator
     {
-        public int MoodAverage()
+        public int MoodAverage(int[] moods)
         {
-            MentalContext _mentalContext = new MentalContext();
-            var entries = _mentalContext.Entries;
-
-            List<int> moods = new List<int>();
-
-            foreach(var entry in entries)
-            {
-                moods.Add((int)entry.Mood);
-            }
-
             var average = moods.Average();
             return (int)Math.Round(average, 0);
         }
 
-        public int MoodMax()
+        public int MoodMax(int[] moods)
         {
-            throw new NotImplementedException();
+            int max = 0;
+ 
+            for(int i = 0; i < 11; i++)
+            {
+                if(moods[i] > moods[max])
+                {
+                    max = i;
+                }
+            }
+
+            return max;
         }
 
-        public int MoodMin()
+        public int MoodMin(int[] moods)
         {
-            throw new NotImplementedException();
+            int min = 11;
+
+            for(int i = 10; i > 0; i--)
+            {
+                if(moods[i] < moods[min])
+                {
+                    min = i;
+                }
+            }
+
+            return min;
         }
 
-        public int MoodMode()
+        public int MoodMode(int[] moods)
         {
-            throw new NotImplementedException();
+            int[] moodTotals = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            int mode = 0;
+
+            for(int i = 0; i < 11; i++)
+            {
+                var mood = moods[i];
+
+                moodTotals[mood]++;
+            }
+
+            for (int i = 1; i < 11; i++)
+            {
+                if (moodTotals[i] > moodTotals[mode])
+                {
+                    mode = i;
+                }
+            }
+
+            return mode;
         }
     }
 }

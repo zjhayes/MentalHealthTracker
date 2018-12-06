@@ -31,7 +31,9 @@ namespace MentalHealthTracker.Shared.Orchestrators
                 User = x.User
             }).ToListAsync();
 
-            return entries;
+            var entriesOrdered = entries.OrderBy(i => i.Date).ToList();
+
+            return entriesOrdered;
         }
 
         public async Task<int> CreateEntry(EntryViewModel entry)

@@ -12,7 +12,6 @@ namespace MentalHealthTracker.Web.Controllers
     public class EntryController : Controller
     {
         private readonly IEntryOrchestrator _entryOrchestrator;
-        int postCount = 0;
 
         public EntryController(IEntryOrchestrator entryOrchestrator)
         {

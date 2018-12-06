@@ -1,21 +1,56 @@
-﻿using AutoMoq;
+﻿
+using MentalHealthTracket.Shared.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MentalHealthTracker.Test
 {
     [TestClass]
     class HealthCalculatorTest
     {
-        private readonly AutoMoqer _mocker = new AutoMoqer();
-        [TestMethod]
-        public void MethodName_Returns_When()
+        HealthCalculator calc;
+        int[] mock;
+
+       [TestInitialize]
+        public void Initialize()
         {
-            
+            calc = new HealthCalculator();
+            mock = new int[]{ 1, 5, 5, 10 };
+        }
+
+        [TestMethod]
+        public void MoodAverage_AreEqual()
+        {
+            var expected = 5;
+            var actual = calc.MoodAverage(mock);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void MoodMode_AreEqual()
+        {
+            var expected = 5;
+            var actual = calc.MoodMode(mock);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void MoodMax_AreEqual()
+        {
+            var expected = 10;
+            var actual = calc.MoodMax(mock);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void MoodMin_AreEqual()
+        {
+            var expected = 1;
+            var actual = calc.MoodMin(mock);
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
