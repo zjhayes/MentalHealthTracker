@@ -1,5 +1,8 @@
 ﻿@model MentalHealthTracker.Web.Models.EntryDisplayModel
-
+@using Microsoft.AspNet.Identity
+@{
+	ViewBag.Title = "Health Calculator";
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,10 +27,10 @@
 
 						var count = 0;
 						var total = 0;
-						int[] moodTotals = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+						int[] moodTotals = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 						string[] moodStrings = { "No Entries", "Depressed", "Angry", "Irritable", "Sad", "Anxious", "Tired", "Indifferent", "Content", "Happy", "Excited" };
 
-						foreach (var entry in Model.Entries)
+						foreach (var entry in Model.Entries.Where(u => u.User == HttpContext.Current.User.Identity.GetUserId()))
 						{
 							var moodString = entry.Mood.ToString();
 							var mood = (int)entry.Mood;
@@ -79,7 +82,7 @@
 							Best Mood:
 						</td>
 						<td>
-							@minString
+							@maxString
 						</td>
 					</tr>
 					<tr>
@@ -87,7 +90,7 @@
 							Worst Mood:
 						</td>
 						<td>
-							@maxString
+							@minString
 						</td>
 					</tr>
 				</tbody>

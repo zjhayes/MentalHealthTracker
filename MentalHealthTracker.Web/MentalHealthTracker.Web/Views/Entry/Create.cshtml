@@ -1,52 +1,55 @@
 ﻿@model MentalHealthTracker.Web.Models.CreateEntryModel
-
+@{
+	ViewBag.Title = "New Journal";
+}
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-    <script>
-        function verifyFields() {
-            if ()
-        }
-    </script>
+	<meta name="viewport" content="width=device-width" />
+	<title>Create</title>
+	<script>
+		function verifyFields() {
+			if ()
+			}
+	</script>
 </head>
 <body>
-    <div>
-        <form>
-            <div class="row">
-                <div class="col-md-3">
-                    @Html.LabelFor(model => model.Mood)
-                </div>
-                <div class="col-md-9">
-                    @Html.EnumDropDownListFor(model => model.Mood)
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    @Html.LabelFor(model => model.Journal)
-                </div>
-                <div class="col-md-9">
-                    @Html.TextAreaFor(model => model.Journal, new { rows = "6", cols = "100" })
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    @Html.LabelFor(model => model.Medication)
-                </div>
-                <div class="col-md-9">
-                    @Html.EditorFor(model => model.Medication, new { Width = 50 })
-                </div>
-            </div>
-            <div id="errorMessage" class="hidden alert alert-danger">
-                Error Occurred. Please fill out all fields!
-            </div>
-            <div class="col-md-3">
-                <button onsubmit="verifyFields()" onclick="location.href = '~/Entry';" class="btn btn-secondary" type="submit">Save</button>
-                <button class="btn btn-secondary" type="reset">Clear</button>
-            </div>
-        </form>
-    </div>
+	<h2>New Journal Entry</h2>
+	<div>
+		<form>
+			<div class="row">
+				<div class="col-md-3">
+					@Html.LabelFor(model => model.Mood)
+				</div>
+				<div class="col-md-9">
+					@Html.EnumDropDownListFor(model => model.Mood)
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					@Html.LabelFor(model => model.Journal)
+				</div>
+				<div class="col-md-9">
+					@Html.TextAreaFor(model => model.Journal, new { rows = "6", cols = "100" })
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					@Html.LabelFor(model => model.Medication)
+				</div>
+				<div class="col-md-9">
+					@Html.EditorFor(model => model.Medication, new { Width = 50 })
+				</div>
+			</div>
+			<div id="errorMessage" class="hidden alert alert-danger">
+				Error Occurred. Please fill out all fields!
+			</div>
+			<div class="col-md-3">
+				<button onsubmit="verifyFields()" onclick="location.href = '~/Entry';" class="btn btn-secondary" type="submit">Save</button>
+				<button class="btn btn-secondary" type="reset">Clear</button>
+			</div>
+		</form>
+	</div>
 </body>
 </html>

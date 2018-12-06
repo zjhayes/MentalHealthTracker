@@ -1,9 +1,5 @@
-﻿using MentalHealthTracker.Domain;
-using MentalHealthTracker.Shared.Orchestrators;
-using MentalHealthTracker.Shared.ViewModels;
-using MentalHealthTracket.Shared.Services.Interfaces;
+﻿using MentalHealthTracket.Shared.Services.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace MentalHealthTracket.Shared.Services

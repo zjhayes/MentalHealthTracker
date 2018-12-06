@@ -1,5 +1,4 @@
-﻿
-using MentalHealthTracket.Shared.Services;
+﻿using MentalHealthTracket.Shared.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MentalHealthTracker.Test
