@@ -343,3 +343,12 @@ C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\Ment
 C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\obj\Debug\MentalHealthTracker.Web.csproj.CopyComplete
 C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\obj\Debug\MentalHealthTracker.Web.dll
 C:\Users\Christina\source\repos\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\obj\Debug\MentalHealthTracker.Web.pdb
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.Web.Common.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\WebActivatorEx.dll
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.xml
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.Web.Common.xml
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\zacha\Google Drive\Documents\DMACC\final\MentalHealthTracker\MentalHealthTracker.Web\MentalHealthTracker.Web\bin\Ninject.Web.Mvc.xml

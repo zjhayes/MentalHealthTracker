@@ -1,4 +1,4 @@
-﻿using MentalHealthTracker.Shared.Orchestrators;
+﻿using MentalHealthTracker.Shared.Orchestrators.Interfaces;
 using MentalHealthTracker.Shared.ViewModels;
 using MentalHealthTracker.Web.Models;
 using Microsoft.AspNet.Identity;
@@ -11,8 +11,13 @@ namespace MentalHealthTracker.Web.Controllers
     [Authorize]
     public class EntryController : Controller
     {
-        private EntryOrchestrator _entryOrchestrator = new EntryOrchestrator();
+        private readonly IEntryOrchestrator _entryOrchestrator;
         int postCount = 0;
+
+        public EntryController(IEntryOrchestrator entryOrchestrator)
+        {
+            _entryOrchestrator = entryOrchestrator;
+        }
 
         // GET: Entry
         [HandleError]
