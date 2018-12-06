@@ -50,5 +50,14 @@ namespace MentalHealthTracker.Web.Controllers
 
             return RedirectToAction("Index");
         }
+        [HandleError]
+        public async Task<ActionResult> Statistics()
+        {
+            var displayEntryModel = new EntryDisplayModel()
+            {
+                Entries = await _entryOrchestrator.GetAllEntries()
+            };
+            return View(displayEntryModel);
+        }
     }
 }

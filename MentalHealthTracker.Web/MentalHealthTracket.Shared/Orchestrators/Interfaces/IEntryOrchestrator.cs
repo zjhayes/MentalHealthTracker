@@ -8,6 +8,5 @@ namespace MentalHealthTracker.Shared.Orchestrators.Interfaces
     {
         Task<List<EntryViewModel>> GetAllEntries();
         Task<int> CreateEntry(EntryViewModel entry);
-
     }
 }

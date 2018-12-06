@@ -1,0 +1,83 @@
+﻿@model MentalHealthTracker.Web.Models.EntryDisplayModel
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Mental Health Tracker - Health Calculator</title>
+</head>
+<body>
+	<div class="container">
+		<h2>Mental Health Calculator</h2>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<tbody>
+					@{
+						var average = 0;
+						var mode = 0;
+						var min = 10;
+						var max = 0;
+
+						var count = 0;
+						var total = 0;
+						int[] moodTotals = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+						foreach (var entry in Model.Entries)
+						{
+							var mood = (int)entry.Mood;
+							if (mood < min) { min = mood; }
+							if (mood > max) { max = mood; }
+							moodTotals[mood]++;
+							count += mood;
+							total++;
+						}
+
+						average = count / total;
+
+						for (int i = 1; i < 10; i++)
+						{
+							if (moodTotals[i] > moodTotals[mode])
+							{
+								mode = i;
+							}
+						}
+
+					}
+					<tr>
+						<td>
+							Mood Average:
+						</td>
+						<td>
+							@average
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mood Mode:
+						</td>
+						<td>
+							@mode
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mood Minimum
+						</td>
+						<td>
+							@min
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mood Maximum:
+						</td>
+						<td>
+							@max
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
